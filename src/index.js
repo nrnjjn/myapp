@@ -7,6 +7,7 @@ import { About } from './About'
 import { Navbar } from './Navbar'
 import { Usestate } from './Usestate';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Effect } from './Effect'; 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,7 +15,7 @@ root.render(
     {/* <App />
     <About/> */}
     {/* <Navbar /> */}
-    <Usestate/>
+    <Effect/>
 
   </React.StrictMode>
 );
