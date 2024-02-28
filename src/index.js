@@ -8,14 +8,21 @@ import { Navbar } from './Navbar'
 import { Usestate } from './Usestate';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Effect } from './Effect'; 
+import { Fetchmovie } from './Fetchmovie'; 
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Moviedescr } from './Moviedescr';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App />
-    <About/> */}
-    {/* <Navbar /> */}
-    <Effect/>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/fetchmovies' element={<Fetchmovie/>}/>
+        <Route path='/moviedescr/:id' element={<Moviedescr/>}/>
+
+        
+      </Routes>
+    </BrowserRouter>
 
   </React.StrictMode>
 );
