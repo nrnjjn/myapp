@@ -11,6 +11,8 @@ import { Effect } from './Effect';
 import { Fetchmovie } from './Fetchmovie'; 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Moviedescr } from './Moviedescr';
+import Register from './Register';
+import { View } from './View';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,7 +21,8 @@ root.render(
       <Routes>
         <Route path='/fetchmovies' element={<Fetchmovie/>}/>
         <Route path='/moviedescr/:id' element={<Moviedescr/>}/>
-
+        <Route path='/register' element={<Register/>}/>
+        <Route path='/view' element={<View/>}/>
         
       </Routes>
     </BrowserRouter>
